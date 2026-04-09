@@ -3,113 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Mon portofolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
 <body>
     <header>
-        <div>
-            <a href="">Mon Portfolio</a>
-        </div>
+       <div>
+        <a href="">Mon porofolio</a>
+       </div>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html" class="active">Projets</a></li>
-                <li><a href="passions.html">Passions</a></li>
-                <li><a href="divertissement.html">Divertissement</a></li>
+                <li ><a href="index.html" >Acceuil</a></li>
+                <li><a href="projet.html" class="active">Projet</a></li>
+                <li><a href="passion.html">Passion</a></li>
+                <li><a href="divertissement.html">Divertissements</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="Réalisation">
-        <h2>Mes Réalisations</h2>
-        <div>
-            <div>
-                <img src="image/E-commerce.jpg" alt="E-commerce">
-                <h3>site E-commerce</h3>
-                <p>une boutique en ligne complete  developpé avec  html , css javascript pur .</p>
-                <div>
-                    <samp>HTML</samp>
-                    <Samp>CSS</Samp>
-                    <samp>JS</samp>
+    <main>
+        <section class="projets">
+            <h2>Mes Réalisations</h2>
+
+            <div class="grid-projets">
+
+                <!-- Carte 1 -->
+                <div class="card">
+                    <img src="image/project1.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Site E-commerce</h3>
+                        <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+
+                        <div class="card-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <a href="">code</a>
-                <a href="">démo</a>
-            </div>
-            <div>
-                <img src="image/Gestionnaire de tache.jpg" alt="Gestionnaire de tache">
-                <h3>Gestionnaire de tache</h3>
-                <p>application web pour organiser quotidiens avec stockage local .</p>
-                <div>
-                    <samp>python</samp>
-                    <Samp>flask</Samp>
+
+                <!-- Carte 2 -->
+                <div class="card">
+                    <img src="image/project2.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Gestionnaire de Tâches</h3>
+                        <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+
+                        <div class="card-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <a href="">code</a>
-                <a href="">démo</a>
-            </div>
-            <div>
-                <img src="image/blog personnel.jpg" alt="blog personnel">
-                <h3>blog personnel</h3>
-                <p>projet en cours de migration vers laravel pour apprendre le blockend.</p>
-                <div>
-                    <samp>PHP</samp>
-                    <Samp>laraval</Samp>
-                    
+
+                <!-- Carte 3 -->
+                <div class="card">
+                    <img src="image/project3.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Blog Personnel</h3>
+                        <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+
+                        <div class="tags">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                        </div>
+
+                        <div class="card-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <span class="soon">Bientôt</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <a href="">code</a>
-                <a href="">démo</a>
-            </div>
-            <div>
-                <img src="image/analyse.jpg" alt="analyse">
-                <h3>Dashboar d'analy</h3>
-                <p>visualisation de donneé dynamique ave python et Maptotlib.</p>
-                <div>
-                    <samp>python</samp>
-                    <Samp>Date</Samp>
-                    
+
+                <!-- Carte 4 -->
+                <div class="card">
+                    <img src="image/project4.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Dashboard d’Analyse</h3>
+                        <p>Visualisation de données dynamiques avec Python et Matplotlib.</p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Data</span>
+                        </div>
+
+                        <div class="card-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <a href="">code</a>
-                <a href="">démo</a>
-            </div>
-            <div>
-                <img src="image/application.jpg" alt="application">
-                <h3>application Métheo</h3>
-                <p>une application utilisant une API en temp reél pour afficher la Métheo modial.</p>
-                <div>
-                    <samp>javaScript</samp>
-                    <Samp>API</Samp>
-                    
+
+                <!-- Carte 5 -->
+                <div class="card">
+                    <img src="image/project5.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Application Météo</h3>
+                        <p>Application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+
+                        <div class="card-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="">code</a>
-                    <a href="">démo</a>
-                </div> 
-            </div>
-            <div>
-                <img src="image/maquette.jpg" alt="maquette">
-                <h3>Maquette mobile  UI</h3>
-                <p>conception d'une interface utilisation moderne pour une application de fitness.</p>
-                <div>
-                    <samp>figma</samp>
-                    <Samp>Disign</Samp>
-                    
+
+                <!-- Carte 6 -->
+                <div class="card">
+                    <img src="image/project6.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Maquette Mobile UI</h3>
+                        <p>Conception d’une interface utilisateur moderne pour une application de fitness.</p>
+
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>Design</span>
+                        </div>
+
+                        <div class="card-links">
+                            <a href="#"><i class="fa-brands fa-figma"></i> Design</a>
+                            <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <a href="">code</a>
-                <a href="">démo</a>
+
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2026 Jenny. Tous droits réservés.</p>
+        <div><p>2026 Will, Tous droits reservés.</p></div>
         <div>
             <a href=""><i class="fa-brands fa-github"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>

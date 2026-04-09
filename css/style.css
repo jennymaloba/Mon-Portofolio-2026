@@ -240,6 +240,439 @@ overflow: hidden
 
 
 
+.projets {
+    padding: 4rem 2rem;
+}
+
+.grid-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    margin-bottom: 1rem;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: var(--gris-clair);
+    color: var(--gris-tres-fonce);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--gris-clair);
+    padding-top: 1rem;
+}
+
+.card-links a {
+    
+    text-decoration: none;
+    color: var(--gris-tres-fonce);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card-links a:hover {
+    color: var(--violet-doux);
+}
+
+.soon {
+    font-size: 0.9rem;
+    color: var(--gris-fonce);
+}
 
 
 
+/* --- Section Contact --- */
+
+.contact-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-header p {
+    color: var(--gris-fonce);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Infos de contact à gauche */
+.contact-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.info-item {
+    margin-bottom: 2rem;
+}
+
+.info-item h3 {
+    color: var(--violet-doux);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-item p {
+    color: var(--gris-tres-fonce);
+    font-weight: 500;
+}
+
+/* Formulaire à droite */
+.contact-form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--gris-tres-fonce);
+    font-weight: 600;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+}
+
+.btn-submit {
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        margin: 2rem auto;
+    }
+}
+
+
+
+/* --- Mise en page Divertissement --- */
+
+.divertissement-container {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-divertissement {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Style des catégories / filtres */
+.categories-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.categories-tags .tag {
+    padding: 8px 20px;
+    background-color: white;
+    border: 2px solid var(--violet-doux);
+    color: var(--violet-doux);
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.categories-tags .tag.active, 
+.categories-tags .tag:hover {
+    background-color: var(--violet-doux);
+    color: white;
+}
+
+/* Grille spécifique */
+.grid-divertissement {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+/* Cartes Divertissement */
+.card-div {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-div:hover {
+    transform: scale(1.03);
+}
+
+.card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.card-div-content {
+    padding: 1.5rem;
+}
+
+.label-cat {
+    display: inline-block;
+    color: var(--orange-vif);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.card-div-content h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.8rem;
+}
+
+.card-div-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: var(--violet-doux);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.btn-link:hover {
+    border-color: var(--violet-doux);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .grid-divertissement {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Section Passions --- */
+
+.passions-container {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.intro-passions {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.passion-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 8rem;
+}
+
+/* Inversion pour une ligne sur deux */
+.passion-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.passion-image {
+    flex: 1;
+    position: relative;
+}
+
+.passion-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px var(--gris-clair); /* Effet de décalage stylé */
+    transition: transform 0.4s ease;
+}
+
+.passion-item:hover .passion-image img {
+    transform: scale(1.02);
+}
+
+.passion-text {
+    flex: 1;
+}
+
+.passion-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--gris-clair);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.passion-text h3 {
+    font-size: 2.2rem;
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+}
+
+.passion-text p {
+    color: var(--gris-fonce);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.passion-tags span {
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 850px) {
+    .passion-item, .passion-item.reverse {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .passion-image img {
+        height: 300px;
+        box-shadow: 10px 10px 0px var(--gris-clair);
+    }
+
+    .passion-text {
+        text-align: center;
+    }
+    
+    .passion-text p {
+        text-align: center;
+    }
+}
